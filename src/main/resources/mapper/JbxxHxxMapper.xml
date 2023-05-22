@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.JbxxHxxMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.demo.domain.JbxxHxx">
+            <result property="nbhh" column="NBHH" jdbcType="VARCHAR"/>
+            <result property="hh" column="HH" jdbcType="VARCHAR"/>
+            <result property="hlx" column="HLX" jdbcType="VARCHAR"/>
+            <result property="hjdzbm" column="HJDZBM" jdbcType="VARCHAR"/>
+            <result property="hjdzssxq" column="HJDZSSXQ" jdbcType="VARCHAR"/>
+            <result property="hjdzjlx" column="HJDZJLX" jdbcType="VARCHAR"/>
+            <result property="hjdzjlxms" column="HJDZJLXMS" jdbcType="VARCHAR"/>
+            <result property="hjdmlph" column="HJDMLPH" jdbcType="VARCHAR"/>
+            <result property="hjdmlphms" column="HJDMLPHMS" jdbcType="VARCHAR"/>
+            <result property="hjdmlxz" column="HJDMLXZ" jdbcType="VARCHAR"/>
+            <result property="hjdzxz" column="HJDZXZ" jdbcType="VARCHAR"/>
+            <result property="hjdz" column="HJDZ" jdbcType="VARCHAR"/>
+            <result property="xzjd" column="XZJD" jdbcType="VARCHAR"/>
+            <result property="jcwh" column="JCWH" jdbcType="VARCHAR"/>
+            <result property="pcs" column="PCS" jdbcType="VARCHAR"/>
+            <result property="zrq" column="ZRQ" jdbcType="VARCHAR"/>
+            <result property="jhlb" column="JHLB" jdbcType="VARCHAR"/>
+            <result property="jlsj" column="JLSJ" jdbcType="VARCHAR"/>
+            <result property="chlb" column="CHLB" jdbcType="VARCHAR"/>
+            <result property="cxsj" column="CXSJ" jdbcType="VARCHAR"/>
+            <result property="gxsj" column="GXSJ" jdbcType="VARCHAR"/>
+            <result property="hhzt" column="HHZT" jdbcType="VARCHAR"/>
+            <result property="sjgsdwdm" column="SJGSDWDM" jdbcType="BIGINT"/>
+            <result property="sjgsdwmc" column="SJGSDWMC" jdbcType="VARCHAR"/>
+            <result property="czdwdm" column="CZDWDM" jdbcType="VARCHAR"/>
+            <result property="czdwmc" column="CZDWMC" jdbcType="VARCHAR"/>
+            <result property="czybh" column="CZYBH" jdbcType="DECIMAL"/>
+            <result property="czyxm" column="CZYXM" jdbcType="VARCHAR"/>
+            <result property="czsj" column="CZSJ" jdbcType="VARCHAR"/>
+            <result property="objid" column="OBJID" jdbcType="VARCHAR"/>
+            <result property="logid" column="LOGID" jdbcType="DECIMAL"/>
+            <result property="cxbz" column="CXBZ" jdbcType="VARCHAR"/>
+            <result property="reserve5" column="RESERVE5" jdbcType="VARCHAR"/>
+            <result property="reserve2" column="RESERVE2" jdbcType="VARCHAR"/>
+            <result property="reserve3" column="RESERVE3" jdbcType="VARCHAR"/>
+            <result property="reserve4" column="RESERVE4" jdbcType="VARCHAR"/>
+            <result property="reserve1" column="RESERVE1" jdbcType="VARCHAR"/>
+            <result property="ischange" column="ISCHANGE" jdbcType="VARCHAR"/>
+            <result property="sjly" column="SJLY" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        NBHH,HH,HLX,
+        HJDZBM,HJDZSSXQ,HJDZJLX,
+        HJDZJLXMS,HJDMLPH,HJDMLPHMS,
+        HJDMLXZ,HJDZXZ,HJDZ,
+        XZJD,JCWH,PCS,
+        ZRQ,JHLB,JLSJ,
+        CHLB,CXSJ,GXSJ,
+        HHZT,SJGSDWDM,SJGSDWMC,
+        CZDWDM,CZDWMC,CZYBH,
+        CZYXM,CZSJ,OBJID,
+        LOGID,CXBZ,RESERVE5,
+        RESERVE2,RESERVE3,RESERVE4,
+        RESERVE1,ISCHANGE,SJLY
+    </sql>
+</mapper>

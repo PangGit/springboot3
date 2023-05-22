@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.JbxxCzrkMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.demo.domain.JbxxCzrk">
+            <result property="rkbm" column="RKBM" jdbcType="VARCHAR"/>
+            <result property="gmsfhm" column="GMSFHM" jdbcType="VARCHAR"/>
+            <result property="xm" column="XM" jdbcType="VARCHAR"/>
+            <result property="xmpyt" column="XMPYT" jdbcType="VARCHAR"/>
+            <result property="xmqp" column="XMQP" jdbcType="VARCHAR"/>
+            <result property="xmx" column="XMX" jdbcType="VARCHAR"/>
+            <result property="xmm" column="XMM" jdbcType="VARCHAR"/>
+            <result property="nbhh" column="NBHH" jdbcType="VARCHAR"/>
+            <result property="hh" column="HH" jdbcType="VARCHAR"/>
+            <result property="hzxm" column="HZXM" jdbcType="VARCHAR"/>
+            <result property="hlx" column="HLX" jdbcType="VARCHAR"/>
+            <result property="yhzgx" column="YHZGX" jdbcType="VARCHAR"/>
+            <result property="cym" column="CYM" jdbcType="VARCHAR"/>
+            <result property="xb" column="XB" jdbcType="VARCHAR"/>
+            <result property="mz" column="MZ" jdbcType="VARCHAR"/>
+            <result property="csdgjdq" column="CSDGJDQ" jdbcType="VARCHAR"/>
+            <result property="csdssxq" column="CSDSSXQ" jdbcType="VARCHAR"/>
+            <result property="csdxz" column="CSDXZ" jdbcType="VARCHAR"/>
+            <result property="csd" column="CSD" jdbcType="VARCHAR"/>
+            <result property="csrq" column="CSRQ" jdbcType="VARCHAR"/>
+            <result property="cssj" column="CSSJ" jdbcType="VARCHAR"/>
+            <result property="cszmbh" column="CSZMBH" jdbcType="VARCHAR"/>
+            <result property="cszqfrq" column="CSZQFRQ" jdbcType="VARCHAR"/>
+            <result property="jggjdq" column="JGGJDQ" jdbcType="VARCHAR"/>
+            <result property="jgssxq" column="JGSSXQ" jdbcType="VARCHAR"/>
+            <result property="jgxz" column="JGXZ" jdbcType="VARCHAR"/>
+            <result property="jg" column="JG" jdbcType="VARCHAR"/>
+            <result property="qtssxq" column="QTSSXQ" jdbcType="VARCHAR"/>
+            <result property="qtzzxz" column="QTZZXZ" jdbcType="VARCHAR"/>
+            <result property="qtzz" column="QTZZ" jdbcType="VARCHAR"/>
+            <result property="hjdzbm" column="HJDZBM" jdbcType="VARCHAR"/>
+            <result property="ssxq" column="SSXQ" jdbcType="VARCHAR"/>
+            <result property="xzjd" column="XZJD" jdbcType="VARCHAR"/>
+            <result property="jcwh" column="JCWH" jdbcType="VARCHAR"/>
+            <result property="jlx" column="JLX" jdbcType="VARCHAR"/>
+            <result property="jlxms" column="JLXMS" jdbcType="VARCHAR"/>
+            <result property="mlph" column="MLPH" jdbcType="VARCHAR"/>
+            <result property="mlphms" column="MLPHMS" jdbcType="VARCHAR"/>
+            <result property="mlxz" column="MLXZ" jdbcType="VARCHAR"/>
+            <result property="qhnxxdz" column="QHNXXDZ" jdbcType="VARCHAR"/>
+            <result property="zz" column="ZZ" jdbcType="VARCHAR"/>
+            <result property="zrq" column="ZRQ" jdbcType="VARCHAR"/>
+            <result property="pcs" column="PCS" jdbcType="VARCHAR"/>
+            <result property="rhyzbs" column="RHYZBS" jdbcType="VARCHAR"/>
+            <result property="whcd" column="WHCD" jdbcType="VARCHAR"/>
+            <result property="hyzk" column="HYZK" jdbcType="VARCHAR"/>
+            <result property="byzk" column="BYZK" jdbcType="VARCHAR"/>
+            <result property="zjxy" column="ZJXY" jdbcType="VARCHAR"/>
+            <result property="xx" column="XX" jdbcType="VARCHAR"/>
+            <result property="sg" column="SG" jdbcType="DECIMAL"/>
+            <result property="zy" column="ZY" jdbcType="VARCHAR"/>
+            <result property="zylb" column="ZYLB" jdbcType="VARCHAR"/>
+            <result property="fwcs" column="FWCS" jdbcType="VARCHAR"/>
+            <result property="fwcsZagldwdm" column="FWCS_ZAGLDWDM" jdbcType="VARCHAR"/>
+            <result property="fwcsZagldwmc" column="FWCS_ZAGLDWMC" jdbcType="VARCHAR"/>
+            <result property="hylb" column="HYLB" jdbcType="VARCHAR"/>
+            <result property="rylb" column="RYLB" jdbcType="VARCHAR"/>
+            <result property="sdxpRxbsh" column="SDXP_RXBSH" jdbcType="VARCHAR"/>
+            <result property="jdxpRxbsh" column="JDXP_RXBSH" jdbcType="VARCHAR"/>
+            <result property="zwyZwbsh" column="ZWY_ZWBSH" jdbcType="VARCHAR"/>
+            <result property="zweZwbsh" column="ZWE_ZWBSH" jdbcType="VARCHAR"/>
+            <result property="jhrygmsfhm" column="JHRYGMSFHM" jdbcType="VARCHAR"/>
+            <result property="jhryrybh" column="JHRYRYBH" jdbcType="VARCHAR"/>
+            <result property="jhryxm" column="JHRYXM" jdbcType="VARCHAR"/>
+            <result property="jhrygx" column="JHRYGX" jdbcType="VARCHAR"/>
+            <result property="jhrycyzjdm" column="JHRYCYZJDM" jdbcType="VARCHAR"/>
+            <result property="jhryzjhm" column="JHRYZJHM" jdbcType="VARCHAR"/>
+            <result property="jhrywwx" column="JHRYWWX" jdbcType="VARCHAR"/>
+            <result property="jhrywwm" column="JHRYWWM" jdbcType="VARCHAR"/>
+            <result property="jhrylxdh" column="JHRYLXDH" jdbcType="VARCHAR"/>
+            <result property="jhregmsfhm" column="JHREGMSFHM" jdbcType="VARCHAR"/>
+            <result property="jhrerybh" column="JHRERYBH" jdbcType="VARCHAR"/>
+            <result property="jhrexm" column="JHREXM" jdbcType="VARCHAR"/>
+            <result property="jhregx" column="JHREGX" jdbcType="VARCHAR"/>
+            <result property="jhrecyzjdm" column="JHRECYZJDM" jdbcType="VARCHAR"/>
+            <result property="jhrezjhm" column="JHREZJHM" jdbcType="VARCHAR"/>
+            <result property="jhrewwx" column="JHREWWX" jdbcType="VARCHAR"/>
+            <result property="jhrewwm" column="JHREWWM" jdbcType="VARCHAR"/>
+            <result property="jhrelxdh" column="JHRELXDH" jdbcType="VARCHAR"/>
+            <result property="fqrybh" column="FQRYBH" jdbcType="VARCHAR"/>
+            <result property="fqgmsfhm" column="FQGMSFHM" jdbcType="VARCHAR"/>
+            <result property="fqxm" column="FQXM" jdbcType="VARCHAR"/>
+            <result property="fqcyzjdm" column="FQCYZJDM" jdbcType="VARCHAR"/>
+            <result property="fqzjhm" column="FQZJHM" jdbcType="VARCHAR"/>
+            <result property="fqwwx" column="FQWWX" jdbcType="VARCHAR"/>
+            <result property="fqwwm" column="FQWWM" jdbcType="VARCHAR"/>
+            <result property="fqlxdh" column="FQLXDH" jdbcType="VARCHAR"/>
+            <result property="mqrybh" column="MQRYBH" jdbcType="VARCHAR"/>
+            <result property="mqgmsfhm" column="MQGMSFHM" jdbcType="VARCHAR"/>
+            <result property="mqxm" column="MQXM" jdbcType="VARCHAR"/>
+            <result property="mqcyzjdm" column="MQCYZJDM" jdbcType="VARCHAR"/>
+            <result property="mqzjhm" column="MQZJHM" jdbcType="VARCHAR"/>
+            <result property="mqwwx" column="MQWWX" jdbcType="VARCHAR"/>
+            <result property="mqwwm" column="MQWWM" jdbcType="VARCHAR"/>
+            <result property="mqlxdh" column="MQLXDH" jdbcType="VARCHAR"/>
+            <result property="porybh" column="PORYBH" jdbcType="VARCHAR"/>
+            <result property="pogmsfhm" column="POGMSFHM" jdbcType="VARCHAR"/>
+            <result property="poxm" column="POXM" jdbcType="VARCHAR"/>
+            <result property="pocyzjdm" column="POCYZJDM" jdbcType="VARCHAR"/>
+            <result property="pozjhm" column="POZJHM" jdbcType="VARCHAR"/>
+            <result property="powwx" column="POWWX" jdbcType="VARCHAR"/>
+            <result property="powwm" column="POWWM" jdbcType="VARCHAR"/>
+            <result property="polxdh" column="POLXDH" jdbcType="VARCHAR"/>
+            <result property="lbsQrrq" column="LBS_QRRQ" jdbcType="VARCHAR"/>
+            <result property="lbsQryy" column="LBS_QRYY" jdbcType="VARCHAR"/>
+            <result property="lbsLzgj" column="LBS_LZGJ" jdbcType="VARCHAR"/>
+            <result property="lbsLzssxq" column="LBS_LZSSXQ" jdbcType="VARCHAR"/>
+            <result property="lbsLzdqhnxz" column="LBS_LZDQHNXZ" jdbcType="VARCHAR"/>
+            <result property="lbzQrrq" column="LBZ_QRRQ" jdbcType="VARCHAR"/>
+            <result property="lbzQryy" column="LBZ_QRYY" jdbcType="VARCHAR"/>
+            <result property="lbzLzgj" column="LBZ_LZGJ" jdbcType="VARCHAR"/>
+            <result property="lbzLzssxq" column="LBZ_LZSSXQ" jdbcType="VARCHAR"/>
+            <result property="lbzLzdqhnxz" column="LBZ_LZDQHNXZ" jdbcType="VARCHAR"/>
+            <result property="qcrq" column="QCRQ" jdbcType="VARCHAR"/>
+            <result property="qcyy" column="QCYY" jdbcType="VARCHAR"/>
+            <result property="qwdgj" column="QWDGJ" jdbcType="VARCHAR"/>
+            <result property="qwdssxq" column="QWDSSXQ" jdbcType="VARCHAR"/>
+            <result property="qwdqhnxz" column="QWDQHNXZ" jdbcType="VARCHAR"/>
+            <result property="qfjg" column="QFJG" jdbcType="VARCHAR"/>
+            <result property="qfjgmc" column="QFJGMC" jdbcType="VARCHAR"/>
+            <result property="qfrq" column="QFRQ" jdbcType="VARCHAR"/>
+            <result property="yxqsrq" column="YXQSRQ" jdbcType="VARCHAR"/>
+            <result property="yxjzrq" column="YXJZRQ" jdbcType="VARCHAR"/>
+            <result property="zzmc" column="ZZMC" jdbcType="VARCHAR"/>
+            <result property="swzxbs" column="SWZXBS" jdbcType="VARCHAR"/>
+            <result property="swrq" column="SWRQ" jdbcType="VARCHAR"/>
+            <result property="swyy" column="SWYY" jdbcType="VARCHAR"/>
+            <result property="lxdh" column="LXDH" jdbcType="VARCHAR"/>
+            <result property="xxjb" column="XXJB" jdbcType="VARCHAR"/>
+            <result property="zxlb" column="ZXLB" jdbcType="VARCHAR"/>
+            <result property="zxsj" column="ZXSJ" jdbcType="VARCHAR"/>
+            <result property="zxyy" column="ZXYY" jdbcType="VARCHAR"/>
+            <result property="gxsj" column="GXSJ" jdbcType="VARCHAR"/>
+            <result property="bdfw" column="BDFW" jdbcType="VARCHAR"/>
+            <result property="zjsj" column="ZJSJ" jdbcType="VARCHAR"/>
+            <result property="ryzt" column="RYZT" jdbcType="VARCHAR"/>
+            <result property="bz" column="BZ" jdbcType="VARCHAR"/>
+            <result property="sjgsdwdm" column="SJGSDWDM" jdbcType="BIGINT"/>
+            <result property="sjgsdwmc" column="SJGSDWMC" jdbcType="VARCHAR"/>
+            <result property="czdwdm" column="CZDWDM" jdbcType="VARCHAR"/>
+            <result property="czdwmc" column="CZDWMC" jdbcType="VARCHAR"/>
+            <result property="czybh" column="CZYBH" jdbcType="DECIMAL"/>
+            <result property="czyxm" column="CZYXM" jdbcType="VARCHAR"/>
+            <result property="czsj" column="CZSJ" jdbcType="VARCHAR"/>
+            <result property="objid" column="OBJID" jdbcType="VARCHAR"/>
+            <result property="logid" column="LOGID" jdbcType="DECIMAL"/>
+            <result property="cxbz" column="CXBZ" jdbcType="VARCHAR"/>
+            <result property="cxsj" column="CXSJ" jdbcType="VARCHAR"/>
+            <result property="cxrbh" column="CXRBH" jdbcType="DECIMAL"/>
+            <result property="cxywlsh" column="CXYWLSH" jdbcType="VARCHAR"/>
+            <result property="reserve1" column="RESERVE1" jdbcType="VARCHAR"/>
+            <result property="reserve2" column="RESERVE2" jdbcType="VARCHAR"/>
+            <result property="reserve3" column="RESERVE3" jdbcType="VARCHAR"/>
+            <result property="reserve4" column="RESERVE4" jdbcType="VARCHAR"/>
+            <result property="reserve5" column="RESERVE5" jdbcType="VARCHAR"/>
+            <result property="ischange" column="ISCHANGE" jdbcType="VARCHAR"/>
+            <result property="sjly" column="SJLY" jdbcType="VARCHAR"/>
+            <result property="lshb" column="LSHB" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        RKBM,GMSFHM,XM,
+        XMPYT,XMQP,XMX,
+        XMM,NBHH,HH,
+        HZXM,HLX,YHZGX,
+        CYM,XB,MZ,
+        CSDGJDQ,CSDSSXQ,CSDXZ,
+        CSD,CSRQ,CSSJ,
+        CSZMBH,CSZQFRQ,JGGJDQ,
+        JGSSXQ,JGXZ,JG,
+        QTSSXQ,QTZZXZ,QTZZ,
+        HJDZBM,SSXQ,XZJD,
+        JCWH,JLX,JLXMS,
+        MLPH,MLPHMS,MLXZ,
+        QHNXXDZ,ZZ,ZRQ,
+        PCS,RHYZBS,WHCD,
+        HYZK,BYZK,ZJXY,
+        XX,SG,ZY,
+        ZYLB,FWCS,FWCS_ZAGLDWDM,
+        FWCS_ZAGLDWMC,HYLB,RYLB,
+        SDXP_RXBSH,JDXP_RXBSH,ZWY_ZWBSH,
+        ZWE_ZWBSH,JHRYGMSFHM,JHRYRYBH,
+        JHRYXM,JHRYGX,JHRYCYZJDM,
+        JHRYZJHM,JHRYWWX,JHRYWWM,
+        JHRYLXDH,JHREGMSFHM,JHRERYBH,
+        JHREXM,JHREGX,JHRECYZJDM,
+        JHREZJHM,JHREWWX,JHREWWM,
+        JHRELXDH,FQRYBH,FQGMSFHM,
+        FQXM,FQCYZJDM,FQZJHM,
+        FQWWX,FQWWM,FQLXDH,
+        MQRYBH,MQGMSFHM,MQXM,
+        MQCYZJDM,MQZJHM,MQWWX,
+        MQWWM,MQLXDH,PORYBH,
+        POGMSFHM,POXM,POCYZJDM,
+        POZJHM,POWWX,POWWM,
+        POLXDH,LBS_QRRQ,LBS_QRYY,
+        LBS_LZGJ,LBS_LZSSXQ,LBS_LZDQHNXZ,
+        LBZ_QRRQ,LBZ_QRYY,LBZ_LZGJ,
+        LBZ_LZSSXQ,LBZ_LZDQHNXZ,QCRQ,
+        QCYY,QWDGJ,QWDSSXQ,
+        QWDQHNXZ,QFJG,QFJGMC,
+        QFRQ,YXQSRQ,YXJZRQ,
+        ZZMC,SWZXBS,SWRQ,
+        SWYY,LXDH,XXJB,
+        ZXLB,ZXSJ,ZXYY,
+        GXSJ,BDFW,ZJSJ,
+        RYZT,BZ,SJGSDWDM,
+        SJGSDWMC,CZDWDM,CZDWMC,
+        CZYBH,CZYXM,CZSJ,
+        OBJID,LOGID,CXBZ,
+        CXSJ,CXRBH,CXYWLSH,
+        RESERVE1,RESERVE2,RESERVE3,
+        RESERVE4,RESERVE5,ISCHANGE,
+        SJLY,LSHB
+    </sql>
+</mapper>
